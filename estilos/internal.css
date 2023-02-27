@@ -1,0 +1,73 @@
+@import url(../estilos/reset.css);
+@import url(../estilos/global.css);
+@import url(components/navigator.css);
+@import url(components/pills.css);
+@import url(components/galeria.css);
+
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.wrapper .coluna-esquerda{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 58px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.wrapper .conteudo-principal{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    padding-left: 130px;
+}
+
+.wrapper .main-top{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrapper .main-bottom{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrapper .conteudo-principal .main-top .logo img{
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    max-width: 700px;
+    
+}
+
+.wrapper .main-top .descricao {
+    background-color: rgba(0,0,0,.7);
+    max-width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+.wrapper .main-top .descricao .descricao__text p{
+    color: white;
+    font-size: .8em;
+    
+}
+
+.wrapper .main-top .descricao .pills{
+    margin-bottom: 20px;
+}
