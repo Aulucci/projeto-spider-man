@@ -29,6 +29,7 @@
     width: 100%;
     background-color: gray;
     padding-left: 130px;
+    
 }
 
 .wrapper .main-top{
@@ -39,7 +40,8 @@
 }
 
 .wrapper .main-bottom{
-    height: 20vh;
+    
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -55,19 +57,28 @@
 
 .wrapper .main-top .descricao {
     background-color: rgba(0,0,0,.7);
-    max-width: 60%;
+    width: 70%;
     padding: 20px;
     border-radius: 10px;
     
     
+    
 }
 
-.wrapper .main-top .descricao .descricao__text p{
+.wrapper .main-top  .descricao__text p{
     color: white;
     font-size: .8em;
+    
+
     
 }
 
 .wrapper .main-top .descricao .pills{
     margin-bottom: 20px;
+}
+
+.spiderman-01-01{
+    background-image: url(../images/spiderman-tobey/movie-01/background.png);
+    background-position: left top;
+    background-size: cover;
 }
