@@ -57,7 +57,7 @@
 
 .wrapper .main-top .descricao {
     background-color: rgba(0,0,0,.7);
-    width: 70%;
+    max-width: 60%;
     padding: 20px;
     border-radius: 10px;
     
@@ -79,6 +79,18 @@
 
 .spiderman-01-01{
     background-image: url(../images/spiderman-tobey/movie-01/background.png);
+    background-position: left top;
+    background-size: cover;
+}
+
+.spiderman-01-02{
+    background-image: url(../images/spiderman-tobey/movie-02/background.png);
+    background-position: left top;
+    background-size: cover;
+}
+
+.spiderman-01-03{
+    background-image: url(../images/spiderman-tobey/movie-03/background.png);
     background-position: left top;
     background-size: cover;
 }
