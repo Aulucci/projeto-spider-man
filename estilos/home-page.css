@@ -4,6 +4,12 @@
 @import url(global.css);
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --cor01: #B9001F;
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -15,13 +21,6 @@
     font-size: 16px;
     text-decoration: none;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-:root{
-    --cor01: #B9001F;
-}
-
 
 body{
     background-color: var(--cor01);
@@ -37,6 +36,8 @@ body::before{
     height: 100%;
     width: 100%;
     transition: opacity .5s ease-in-out;
+    
+    
 }
 
 .menu{
@@ -69,8 +70,8 @@ body::before{
 
 .card{
     border: 0.5rem solid white;
-    width: calc(100% / 3 - 8%);
-    height: 70vh;
+    width: calc(100% / 3 - 12%);
+    height: 60vh;
     position: relative;
     transition: filter .5s ease-in-out;
     
