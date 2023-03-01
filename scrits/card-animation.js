@@ -19,3 +19,17 @@ function addEventListenerToCards() {
 }
 
 document.addEventListener("DOMContentLoaded", addEventListenerToCards, false)
+
+/*function selectCarrosselItem(ItemSelecionado) {
+    console.log('Selecionado item', ItemSelecionado);
+} */
+
+function selectCarrosselItem(botaoSelecionado) {
+    const ItemSelecionado =  botaoSelecionado.id;
+    const carrossel = document.querySelector(`.card__carrossel`);
+    const transform = carrossel.style.transform;
+    const rotateY = transform.match(/rotateY\((-?\d+deg)\)/);
+    const rotateYdeg = -120 + (Number(ItemSelecionado));
+    
+    console.log(rotateY);
+}
