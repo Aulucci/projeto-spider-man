@@ -218,4 +218,6 @@ body[id^="spider-"] .card:not(.card--hovered) {
     justify-content: center;
     width: calc(100vw / 3 - 10%);
     transform-style: preserve-3d;
+    transition: transform 0.4s ease-in;
+    
 }

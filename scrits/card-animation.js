@@ -24,12 +24,18 @@ document.addEventListener("DOMContentLoaded", addEventListenerToCards, false)
     console.log('Selecionado item', ItemSelecionado);
 } */
 
-function selectCarrosselItem(botaoSelecionado) {
-    const ItemSelecionado =  botaoSelecionado.id;
+function selectCarrosselItem(selectedButtonElements) {
+    const ItemSelecionado =  selectedButtonElements.id;
     const carrossel = document.querySelector(`.card__carrossel`);
     const transform = carrossel.style.transform;
     const rotateY = transform.match(/rotateY\((-?\d+deg)\)/);
-    const rotateYdeg = -120 + (Number(ItemSelecionado));
+    const rotateYdeg = -120 * (Number(ItemSelecionado) - 1);
+    const newTransform = transform.replace(rotateY[0], `rotateY(${rotateYdeg}deg)`);
     
-    console.log(rotateY);
+    carrossel.style.transform = newTransform;
+
+    const activeButtonElement = document.querySelector('.controle__botao--active');
+    activeButtonElement.classList.remove('controle__botao--active');
+    selectedButtonElements.classList.add('controle__botao--active')
+   
 }
